@@ -4,10 +4,10 @@
     <title>Clean</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml.
 </description>
-    <link>http://yourdomain.com/clean/</link>
-    <atom:link href="http://yourdomain.com/clean/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 Aug 2016 14:35:00 +0800</pubDate>
-    <lastBuildDate>Mon, 01 Aug 2016 14:35:00 +0800</lastBuildDate>
+    <link>http://yourdomain.com/jekyllThemes/</link>
+    <atom:link href="http://yourdomain.com/jekyllThemes/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 01 Aug 2016 14:41:36 +0800</pubDate>
+    <lastBuildDate>Mon, 01 Aug 2016 14:41:36 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -43,8 +43,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at mauris ante. C
 
 </description>
         <pubDate>Sun, 27 Sep 2015 02:51:59 +0800</pubDate>
-        <link>http://yourdomain.com/clean/jekyll/update/2015/09/27/clean-theme.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/clean/jekyll/update/2015/09/27/clean-theme.html</guid>
+        <link>http://yourdomain.com/jekyllThemes/jekyll/update/2015/09/27/clean-theme.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyllThemes/jekyll/update/2015/09/27/clean-theme.html</guid>
         
         
         <category>jekyll</category>
@@ -58,8 +58,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at mauris ante. C
         <description>&lt;p&gt;Hello Jekyll&lt;/p&gt;
 </description>
         <pubDate>Sat, 26 Sep 2015 00:00:00 +0800</pubDate>
-        <link>http://yourdomain.com/clean/jekyll/update/2015/09/26/hello.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/clean/jekyll/update/2015/09/26/hello.html</guid>
+        <link>http://yourdomain.com/jekyllThemes/jekyll/update/2015/09/26/hello.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyllThemes/jekyll/update/2015/09/26/hello.html</guid>
         
         
         <category>jekyll</category>

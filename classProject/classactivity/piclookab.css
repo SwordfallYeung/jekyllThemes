@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*图片装换*/
+.grey_bg *{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	}
+.grey_bg{border:0px solid red;
+	overflow:hidden;
+	height:auto;
+	display:block;
+	margin-bottom:70px;
+	width:100%;
+	}
+
+.blog_item{
+  border:0px solid red;
+  float:left;
+  width:80%;
+  padding:20px;
+  height:326px;
+  position:relative;
+ margin-left:110px;
+  
+}
+.blog_item:hover{
+	color:#fff;/*字体变白*/
+	background:#000;}
+	
+.blog_item .abs_bg{
+	display:block;
+	z-index:1;
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-size:cover;
+	 -ms-filter:/*毛玻璃*/ "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0; 
+	}
+.blog_item:hover .abs_bg{/*毛玻璃*/
+	  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+      filter: alpha(opacity=50);
+      -moz-opacity: 0.5;
+      -khtml-opacity: 0.5;
+      opacity: 0.5;
+	}
+
+.blog_item .blog_item_inner{
+	z-index:2;
+	position:relative;
+	}
+
+.blog_item h1{border:0px solid black; 
+	height:190px;
+	overflow:hidden;
+	font-size:2.5em;
+	line-height:50px;
+	font-weight:400!important;
+	padding-top:40px;
+	padding-left:40px;
+	}	
+.blog_item:hover h1,.blog_item:hover h5{
+	color:#fff;
+	}
+
+.blog_item h5{
+	font-size:0.8em;
+	font-family:"Mono";
+	letter-spacing:1px;
+	color:#7f7f7f;
+	margin-top:0;
+	line-height:2.09em;
+	text-transform:uppercase;
+	font-weight:normal!important;
+	}

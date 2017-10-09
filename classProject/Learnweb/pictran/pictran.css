@@ -1,0 +1,37 @@
+body{background:#fff;}
+
+body,ul,li,p,h2{margin:0;padding:0;}
+
+li{list-style:none;}
+
+
+.focus{width:550px;height:285px;margin:0 0 25px}
+.rel{position:relative;}
+
+#focus .focusimgs{position:absolute;}
+#focus .focusimgs img{border:0;vertical-align:top;height:285px;width:550px;}
+.fcBg{background:#000;width:100%;height:50px;opacity:0.4;filter:alpha(opacity=40)0;left:0;bottom:0;}
+
+.fcTx{left:64px;bottom:5px;font:12px/1.5 hiragino sans gb,microsoft yahei,simsun;}
+.abs{position:absolute;}
+
+.fs16{font-size:16px;font-weight:normal;}
+.c-white,c-white a{color:#fff;text-decoration:none;outline:none;}
+.c-white a:hover{text-decoration:underline;}
+
+.fcpu{bottom:18px;right:8px;}
+
+.fcp{display:block;float:left;width:10px;height:10px;background:url(point.png) no-repeat;margin:0 6px;}
+
+.fcp_on{background:url(point_on.png) no-repeat;}
+
+.fcVideo{background:url(haha.png) no-repeat;width:40px;height:40px;display:block;bottom:5px;left:11px}
+
+
+.fcArrL,.fcArrR{display:block;width:37px;height:64px;position:absolute;top:115px;cursor:pointer;width:0;}
+
+.fcArrL{left:0;background:url(left.png) no-repeat;}
+.fcArrL:hover{background:url(left_hover.png) no-repeat;}
+
+.fcArrR{right:0;background:url(right.png) no-repeat;}
+.fcArrR:hover{background:url(right_hover.png) no-repeat;}

@@ -1,0 +1,55 @@
+/* CSS Document */
+@charset "gb2312";
+*{marigin:0px; padding:0px;}
+body{font-size:14px;font-family:"微软雅黑";background:#E3E3E5 url(../images/bg.jpg)  50% top scroll no-repeat;color:#5d5d5d;}
+a{text-decoration:none;}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+li{list-style:none;}
+img{display:block;border:0px;}
+/*end*/
+.weizi{width:730px;height:30px;line-height:30px; background:url("../images/weizi.png") 7px 5px no-repeat; background-color:#fff;
+border-bottom:1px solid #ccc;}
+.weizi .wz_text{font-size:16px;color:#444;padding-left:25px;}
+.weizi .wz_text h1{font-size:16px;color:#F00E71;display:inline;font-weight:500;}
+.weizi .wz_text a{color:#444;}
+.weizi .wz_text a:hover{text-decoration:underline;color:#f00;}
+
+/*日记*/
+#content #riji{width:730px;background:#fff;}
+#riji .rj_content{width:710px;margin-top:10px;padding:0 10px;background:#fff;padding-bottom:10px;}
+.rj_content .shiguang{width:710px;height:145px;}
+.rj_content .shiguang .sg_ico{width:120px;height:145px; background:url("../images/line_bg.jpg") 60px 0px repeat-y;
+filter:Alpha(opacity=80);-moz-opacity: 0.8; opacity: 0.8;}
+.rj_content .shiguang .sg_ico img{border-radius:60px;margin-top:10px;}
+.rj_content .shiguang .sg_text{width:530px;height:100px;background:#fff;border:1px solid #E0DFDF;
+filter:Alpha(opacity=80);-moz-opacity: 0.8; opacity: 0.8;
+margin:10px 10px 0px 10px;position:relative;border-radius:5px;padding:10px;color:#4F4F4F;}
+.rj_content .shiguang .sg_text img{position:absolute;top:40px;left:-14px;z-index:1;}
+/*相册*/
+#content_xc{width:990px;margin:5px auto; background:#fff;}
+#content_xc .weizi{width:990px;height:30px;line-height:30px; background:url("../images/weizi.png") 7px 5px no-repeat; background-color:#fff;
+border-bottom:1px solid #ccc;}
+.weizi .wz_text{font-size:16px;color:#444;padding-left:25px;}
+.weizi .wz_text h1{font-size:16px;color:#F00E71;display:inline;font-weight:500;}
+.weizi .wz_text a{color:#444;}
+.weizi .wz_text a:hover{text-decoration:underline;color:#f00;}
+#content_xc .xc_content{width:990px;}
+.xc_content .con-bg{width:990px;background:#fff; margin:0 auto; overflow:hidden; padding-top:8px; padding-bottom:10px;filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=4);/*ie*/
+-moz-box-shadow: 2px 2px 10px #909090;/*firefox*/
+-webkit-box-shadow: 2px 2px 10px #909090;/*safari或chrome*/
+box-shadow:2px 2px 10px #909090;/*opera或ie9*/}
+
+
+
+
+
+
+
+
+
+
+
+
+

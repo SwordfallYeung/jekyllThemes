@@ -1,0 +1,56 @@
+
+body{border:0px solid red;height:1650px;}
+
+#all{border:0px solid yellow;width:960px;margin:0 auto;height:1530px;}
+
+#top{width:1360px;height:138px;border:0px solid red;background:url(images/top_bg.png)}
+
+#logo{border:0px solid red;width:70px;height:70px;float:left;top:34px;left:200px;display:block;z-index:1;position:absolute;}
+#logo:active{opacity:0.5;}
+#logo img{width:100%;height:auto;border:none;}
+
+
+#topic h2{border:0px solid red;margin-left:280px;font-size:50px;font-weight:bold;font-family:"华文新魏";color:white;line-height:130px;}
+
+
+#top_picture{border:0px solid green;width:960px;margin:0 auto;margin-top:20px;}
+
+.top_picture{position:relative;}
+
+#top_text{border:0px solid purple;top:35px;right:0px;position:absolute;width:380px;height:280px;display:inline;font-size:25px;font-family:"华文新魏"}
+
+h1{font-family:"华文新魏";}	
+#itinfor{border:0px solid blue;}
+#itinforpic{width:960px;height:200px;}
+#itinforpic li{float:left;width:170px;height:104px;margin-left:20px;}
+#itinforpic img{border:0px solid red;width:120px;height:74px;}
+#itinforpic a:hover{border:2px solid white;}
+
+
+#itlearn{border:0px solid red;height:500px;}
+#itlearn_content{width:960px;}
+#itlearn_content li{border:0px solid red;float:left;width:190px;height:210px;margin-left:20px;position:relative;}
+#itlearn_content img{border:0px solid red;width:180px;height:108px;top:2px;left:2px;position:absolute;}
+
+#picfocus img{transform:scale(1,1);-ms-transform:scale(1,1);-moz-transform: scale(1, 1);-webkit-transform: scale(1, 1);-o-transform: scale(1, 1);opacity:1;
+	transition:transform 0.5s ease-in-out, opacity 0.5s;-moz-transition:-moz-transform 0.5s ease-in-out, opacity 0.5s;-webkit-transition:-webkit-transform 0.5s ease-in-out, opacity 0.5s;
+}
+	
+#picfocus:hover img{
+	transform:scale(1.05,1.05);ms-transform:scale(1.05,1.05);-moz-transform:scale(1.05,1.05);-webkit-transform:scale(1.05,1.05);-o-transform:scale(1.05,1.05);opacity:0.9;
+	}
+	
+
+#itlearn_content li p a{border:0px solid black;font:14px/1.5 hiragino sans gb,microsoft yahei,simsun;font-weight:bold;text-decoration:none;color:black;top:120px;left:0;position:absolute;}
+#itlearn_content li p:hover{text-decoration:underline;}
+
+#fuctrue ul{float:left;border:0px solid red;width:960px;}
+#fuctrue ul li{float:left;}
+.circle img{border:0px solid red;width:350px;height:350px;}
+.tangle{border:0px solid red;width:590px;padding-left:10px;}
+.tangle img{width:590px;height:350px;}
+
+#footer{border:0px solid blue;width:1360px;height:40px;background:url(images/footer.png) repeat-x -10px -20px;}
+
+
+

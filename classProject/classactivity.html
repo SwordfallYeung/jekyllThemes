@@ -1,0 +1,196 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>classactivity</title>
+<link rel="stylesheet" type="text/css" href="classactivity/classactivity.css"/>
+<link href="classactivity/MoveDemo.css" rel="stylesheet" type="text/css"/>
+<link href="classactivity/piclookab.css" rel="stylesheet" type="text/css"/>
+<script type='text/javascript' src="classactivity/modernizr.custom.min.js"></script>
+		<script type='text/javascript' src="classDemo/jquery.js"></script>
+		<script>var $ = jQuery.noConflict();</script>
+		<script type='text/javascript' src="classDemo/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="classactivity/typed.js"></script>
+		<script type="text/javascript" src="classDemo/jquery.lazy.min.js"></script>
+		<script type="text/javascript" src="classDemo/brightbyte-min.js"></script>
+
+
+</head>
+<script type="text/javascript" src="classactivity/MoveDemo.js"></script>
+
+<script>
+
+window.onload=function(){
+	var oPrevDiv=document.getElementsByClassName("prev_div")[0];
+	var oNextDiv=document.getElementsByClassName("next_div")[0];
+	
+	var aLi=document.getElementsByClassName("lipic");
+	
+	var arr=[];
+	
+	for(var i=0;i<aLi.length;i++){
+		
+		var oImg=aLi[i].getElementsByClassName("picfc")[0];
+		arr.push([parseInt(getStyle(aLi[i],"left")),parseInt(getStyle(aLi[i],"top")),getStyle(aLi[i],"opacity")*100,getStyle(aLi[i],"zIndex"),oImg.width]);
+		}
+		
+		//console.dir(arr);
+		
+		oPrevDiv.onclick=function(){//左
+			
+			arr.push(arr[0]);
+			arr.shift();
+			
+			for(var i=0;i<aLi.length;i++){
+				
+				var oImg=aLi[i].getElementsByClassName("picfc")[0];
+				aLi[i].style.zIndex=arr[i][3];
+				startMove(aLi[i],{left:arr[i][0],top:arr[i][1],opacity:arr[i][2]});
+				
+				startMove(oImg,{width:arr[i][4]});
+				}
+			};
+			
+		oNextDiv.onclick=function(){//右
+				arr.unshift(arr[arr.length-1]);
+				arr.pop();
+				
+				for(var i=0;i<aLi.length;i++){
+					var oImg=aLi[i].getElementsByClassName("picfc")[0];
+					
+					aLi[i].style.zIndex=arr[i][3];
+					startMove(aLi[i],{left:arr[i][0],top:arr[i][1],opacity:arr[i][2]});
+					
+					startMove(oImg,{width:arr[i][4]});
+					}
+			};
+			
+			function getStyle(obj,attr){
+				if(obj.currentStyle){
+					return obj.currentStyle[attr];
+					}
+					else{
+						return getComputedStyle(obj,false)[attr];
+						}
+				
+				}
+			
+	};
+	
+	
+</script>
+<body>
+<div class="all">
+<h1>班级活动</h1>
+
+<div id="ITgamepre">
+
+<div class="img"><img src="classactivity/ITgame.jpg"/></div>
+<h1>计战到底宣传时</h1>
+<h3>09.12.2014</h3>
+
+<div id="haha"align="center">
+     <video id="video" controls autoplay width="540px" height="420px" >
+     <source src="classactivity/1301.mp4" type="video/mp4" />
+     </video>
+</div>
+
+    <div class="text"><p>【计战到底宣传语】冬日气寒，需要火热的赛事来点燃青春。计算机学院软件一班的<strong>“青春励志显卓越，榜样力量伴我行”</strong>之计战到底活动马上就要开始啦！你想要体会电视节目中激动人心的答题环节吗？你想要用智慧与他人一决高下吗？那就快来12.11日（本周四）升升食堂门口报名处报名吧！获胜者有惊喜奖品！还有幸运观众奖哟~~软件一班，邀你一战！</p>
+    </div>
+    
+    
+</div>
+
+ <div id="ITgamenow">
+     <h1>计战到底进行时</h1><strong>13.12.2014</strong>
+     <ul>
+     <li class="picfocus"><img src="classactivity/1.jpg"/></li>
+     <li class="picfocus"><img src="classactivity/2.jpg"/></li>
+     <li class="picfocus"><img src="classactivity/3.jpg"/></li>
+     <li class="picfocus"><img src="classactivity/4.jpg"/></li>
+     <li class="picfocus"><img src="classactivity/5.jpg"/></li>
+     </ul>
+     <p>【计战进行时】今天晚上我们班的计战到底准时在鉴主402进行，经过一番激烈的较量，我们班的韦肖晓同学，卓二的肖小粤同学和英语1402班杨汉兴同学获得一二三等奖。紧接着班委们通过抽奖活动选出幸运观众，黄楠同学获得幸运观众奖。最后，在场观众被选手的精彩竞答燃起激情，开启欢快抢答模式，使现场活动气氛十分活跃。为活动画上圆满句号。</p>
+     </div>
+     
+     
+<div id="classparty">
+<h1>班级聚会</h1>
+<div id="automatic">
+
+		<div class="prev_div"></div>
+        <a class="prev" href="#">
+        <span class="ico1"></span>
+        <span class="ico"></span>
+        <span class="txt"></span>
+        </a>
+        
+        	<div class="next_div"></div>
+          <a class="next" href="#">
+          <span class="ico1"></span>
+          <span class="ico"></span>
+          <span class="txt"></span>
+          </a>
+          
+          <ul>
+          		<li class="lipic pos_0"><a><img class="picfc"src="classactivity/images/1.jpg" width="100"/></a></li>
+                <li class="lipic pos_1"><a><img class="picfc"src="classactivity/images/2.jpg" width="270"/></a></li>
+                <li class="lipic pos_2"><a><img class="picfc"src="classactivity/images/3.jpg" width="510"/></a></li>
+                <li class="lipic pos_3"><a><img class="picfc"src="classactivity/images/9.jpg" width="680"/></a></li>
+                <li class="lipic pos_4"><a><img class="picfc"src="classactivity/images/5.jpg" width="510"/></a></li>
+                <li class="lipic pos_5"><a><img class="picfc"src="classactivity/images/6.jpg" width="270"/></a></li>
+           <li class="lipic pos_6"><a><img class="picfc"src="classactivity/images/7.jpg" width="270"/></a></li>
+            <li class="lipic pos_6"><a><img class="picfc"src="classactivity/images/8.jpg" width="270"/></a></li>
+            <li class="lipic pos_6"><a><img class="picfc"src="classactivity/images/4.jpg" width="270"/></a></li>
+          
+          </ul>
+          
+          </div>
+         
+        <p id="footer">【快乐班聚 凝聚你我】我们相聚在皇家大理工，相聚在软件1301班，这里就是我们的一个大家庭。这次班级聚会在uni-home，我们一同做饭、一起唱歌玩游戏，大家各显其能，有麦霸、厨神、桌游小能手~虽然远离家乡，但是我们在这里认识了更多的兄弟姐妹，让我们情同手足，没有地域之分，没有民族之分，聚餐后，同学们在轻松有趣的氛围中一起交流玩乐，酒足饭饱之后，同学们之间的感情变得深厚了，我们班的凝聚力更强了。当我们毕业再看到这些场景时，我相信每个人心中都会涌出阵阵暖流。
+</p>
+</div>
+
+<div id="basketball"></div>
+  <h1>院际篮赛</h1>
+  <div class="grey_bg">
+     <div class="inner">
+     
+         <!--第一张图-->
+         <div class="blog_item">
+           <a class="full_link" href="#"></a>
+           <div class="abs_bg lazy" data-src="classactivity/6.jpg" width="448px"></div>
+           <div class="blog_item_inner">
+              <h1>敏捷的反跑，灵活的运球，快捷的过人，精准的投篮，美丽的弧线，进篮的瞬间，精彩的配合，得分的关键。壮哉我软一！</h1>
+              <h5 class="date">25,04,2015</h5>
+           </div>
+          </div>
+          
+          <!--第二张图-->
+          <div class="blog_item">
+          <a class="full_link" href="#"></a>
+           <div class="abs_bg lazy" data-src="classactivity/7.jpg"></div>
+           <div class="blog_item_inner">
+           <h1>飞旋的篮球带着青春的气息,苦累也愿意;曲折的路线划出成功的轨迹,积淀是必须。爱上对篮球的拼抢劲头，平淡也神奇。</h1>
+           <h5 class="date">24,04,2015</h5>
+          </div>
+            
+         </div>
+         
+         <div class="blog_item ">
+         <a class="full_link" href="#"></a>
+             <div class="abs_bg lazy" data-src="classactivity/8.jpg"></div>
+             <div class="blog_item_inner">
+                <h1>陪你流汗、为你鼓掌，　　　　　　　　拼搏如你们、喝彩是我们。　　　　　　你胜、软一必赞你；你败、软一也挺你。</h1>
+                <h5 class="date">26,04,2015</h5>
+             </div>
+             </div>
+         </div>
+  </div>
+</div>
+
+</div>
+
+
+</body>
+</html>

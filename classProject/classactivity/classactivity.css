@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:url(bg.gif) 0 0 repeat #ececec;;font-family:"华文新魏";}
+
+.all{border:0px solid blue;width:1020px;margin:0 auto;}
+
+#ITgamepre {border:0px solid red;height:460px;position:relative;}
+#ITgamepre h1{border:0px solid red;top:10px;left:0px;position:absolute;}
+#ITgamepre h3{font-size:14px;top:30px;left:250px;position:absolute;}
+.img img{border:0px solid red;width:240px;left:0px;top:80px;position:absolute}
+
+#haha{border:0px solid red;width:1020px;top:50px;right:0;position:absolute;}
+
+#video{border:0px solid blue;}
+
+.text{width:200px;top:70px;right:18px;position:absolute;font-size:19px;}
+
+#ITgamenow{border:0px solid red;position:relative;}
+#ITgamenow strong{top:10px;left:250px;position:absolute;}
+#ITgamenow img{width:150px;}
+#ITgamenow li{float:left;list-style:none;margin:1px;}
+#ITgamenow p{font-size:19px;}
+
+#classparty{margin-top:50px;}
